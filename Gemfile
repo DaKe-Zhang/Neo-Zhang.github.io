@@ -14,3 +14,6 @@ install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
   gem "tzinfo"
   gem "tzinfo-data"
 end
+
+# Jekyll <= 4.2.0 compatibility with Ruby 3.0
+gem "webrick", "~> 1.7"
